@@ -19,7 +19,7 @@ provider "google" {
 }
 
 module "module" {
-  source                  = "../.."
+  source                  = "ssh::git@github.com:quarks-labs/gcp-redis-instance-module.git"
   project                 = local.project
   region                  = local.region
   name                    = local.name
